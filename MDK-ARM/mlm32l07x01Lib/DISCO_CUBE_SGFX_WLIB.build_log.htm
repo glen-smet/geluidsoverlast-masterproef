@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: glen smet KUleuven Flex license: error obtaining information 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\Users\glens\Desktop\eindversie\MDK-ARM\Sgfx_push_button.uvprojx
+Project File Date:  12/10/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin'
+Build target 'mlm32l07x01'
+compiling main.c...
+..\src\main.c(431): warning:  #177-D: function "onTimerEvent"  was declared but never referenced
+  static void onTimerEvent(void *context){
+..\src\main.c(436): warning:  #177-D: function "onTimerResult"  was declared but never referenced
+  static void onTimerResult(void *context){
+..\src\main.c(419): warning:  #177-D: function "sendResult"  was declared but never referenced
+  static void sendResult(void){
+..\src\main.c(717): warning:  #177-D: function "spiramprint"  was declared but never referenced
+  void spiramprint(uint16_t len){
+..\src\main.c(93): warning:  #177-D: variable "TxTimer"  was declared but never referenced
+  static TimerEvent_t TxTimer;
+..\src\main.c(94): warning:  #177-D: variable "ResultTimer"  was declared but never referenced
+  static TimerEvent_t ResultTimer;
+..\src\main.c: 6 warnings, 0 errors
+linking...
+.\NUCLEO_CUBE_SGFX.sct(20): warning: L6329W: Pattern sigfox_data.o(RO) only matches removed unused sections.
+.\NUCLEO_CUBE_SGFX.sct(26): warning: L6329W: Pattern sgfx_cmac_lib.o(RO) only matches removed unused sections.
+.\NUCLEO_CUBE_SGFX.sct(27): warning: L6329W: Pattern sgfx_credentials_lib.o(RO) only matches removed unused sections.
+Program Size: Code=72140 RO-data=1968 RW-data=440 ZI-data=16952  
+Finished: 0 information, 3 warning and 0 error messages.
+FromELF: creating hex file...
+After Build - User command #2: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\bin\fromelf.exe --bincombined --output=DISCO_CUBE_SGFX_WLIB.bin .\mlm32l07x01Lib\DISCO_CUBE_SGFX_WLIB.axf
+".\mlm32l07x01Lib\DISCO_CUBE_SGFX_WLIB.axf" - 0 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L0xx_DFP.2.2.0.pack
+                Keil.STM32L0xx_DFP.2.2.0
+                STMicroelectronics STM32L0 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:/Users/glens/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.2.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
